@@ -13,7 +13,7 @@
    <p> Jobs:
         <ul>
             <li th:each="job : ${skill.jobs}">
-                <a th:href="@{'/view/' + ${job.id}}" th:text="${job.name}"></a>
+                <a th:href="@{'/view/' + ${job.getId()}}" th:text="${job.name}"></a>
             </li>
         </ul>
     </p>
